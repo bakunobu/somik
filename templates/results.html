@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<p>Были загружены параметры:</p>
+<tr><td>Набор данных:</td><td>{{ the_dataset }}</td></tr>
+<tr><td>Метапараметры:</td><td>{{ the_params }}</td></tr>
+<tr><td>Размер карты:</td><td>{{ the_size }}</td></tr>
+</table>
+
+<p>Карта построена</p>
+<img src="{{url_for('static', filename='nodesDifference.png')}}" />
+
+
+
+{% endblock %}
